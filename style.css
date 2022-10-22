@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--theme-primary: #313537;
+	--theme-secondary: #333;
+	--theme-font-color: #a1ffa7;
+	--theme-font-color-sandy: #fc9e59;
+	--theme-background: #202224;
+}
+
+body {
+	min-width: 400px;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	color: var(--theme-font-color);
+	overflow: hidden;
+	background-color: var(--theme-background);
+	padding-top: 3em;
+}
+
+h1 {
+	font-size: 64px;
+	color: var(--theme-font-color-sandy);
+	font-weight: 300px;
+	line-height: 10vh;
+}
+
+p {
+	font-size: 24px;
+}
+
+span {
+	color: white;
+	opacity: 0;
+	transition: all 0.01s ease;
+}
+
+span.fade {
+	opacity: 1;
+}
+
+span.fadeColor {
+	transition: all 3s ease;
+	color: var(--theme-font-color-sandy);
+}
+
+span.opac {
+	transition: all 3s ease;
+	opacity: 1;
+}
+
+section {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 10em;
+	background-color: var(--theme-primary);
+}
+
+a:visited {
+	color: var(--theme-font-color);
+} /* Visited link    */
+a:hover {
+	color: var(--theme-font-color-sandy);
+} /* Mouse over link */
+
+.info-container {
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.socialContainer {
+	padding: 3rem;
+}
+
+#mainH1 {
+	font-size: 64px;
+	color: var(--theme-font-color-sandy);
+	font-weight: 300px;
+	line-height: 10vh;
+}
+
+#avatar {
+	height: auto;
+	width: 200px;
+	border-radius: 10%;
+	border: 1px solid black;
+}
+
+#avatar:hover {
+	cursor: pointer;
+	border: 1px solid grey;
+}
+
+#contactBtn {
+	text-align: center;
+	padding: 18px;
+	font-size: 18px;
+	background-color: var(--theme-background);
+	color: var(--theme-font-color);
+	border: 1px solid black;
+	border-radius: 10%;
+	text-decoration: none;
+}
+
+#contactBtn:hover {
+	cursor: pointer;
+	color: var(--theme-font-color-sandy);
+}
+
+#social1:hover {
+	background-image: url(/img/linkedincolor.png);
+	border: 1px solid black;
+	border-radius: 10%;
+}
+
+#social2:hover {
+	border: 1px solid var(--theme-background);
+	background-color: white;
+	border-radius: 10%;
+}
