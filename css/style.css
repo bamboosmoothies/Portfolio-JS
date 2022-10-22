@@ -67,6 +67,10 @@ section {
 	background-color: var(--theme-primary);
 }
 
+/* Default */
+a {
+	color: var(--theme-font-color);
+}
 a:visited {
 	color: var(--theme-font-color);
 } /* Visited link    */
